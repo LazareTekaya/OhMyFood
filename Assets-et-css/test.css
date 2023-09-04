@@ -1,8 +1,12 @@
 @charset "UTF-8";
-
 * {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 body {
@@ -28,16 +32,26 @@ header img {
   margin-top: 70px;
 }
 
+.header__formulaire {
+  border: none;
+  background-color: #EAEAEA;
+  font-size: 35px;
+}
+
 .header__localisation {
   color: #353535;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 30px;
   padding: 30px;
   background-color: #EAEAEA;
   box-shadow: 0px -5px 10px rgb(186, 184, 184);
   line-height: 0.1;
+  padding-left: 30px;
+}
+.header__localisation i {
+  font-size: 40px;
+  margin-left: 150px;
 }
 
 .header__explore {
@@ -70,7 +84,6 @@ header img {
   opacity: 1;
   transition: opacity 3s ease;
 }
-
 .header__explorer:hover {
   opacity: 0.7;
   box-shadow: 0px 15px 40px 0px grey;
@@ -97,7 +110,6 @@ header img {
   margin: 25px;
   padding: 22px 0;
 }
-
 .btn__nbr {
   color: white;
   background-color: #9356DC;
@@ -109,7 +121,6 @@ header img {
   margin-left: -30px;
   font-size: 40px;
 }
-
 .btn__nbr__txt {
   font-size: 40px;
 }
@@ -118,12 +129,10 @@ header img {
   color: grey;
   font-size: 50px;
 }
-
 .fa-mobile-screen-button .fa-list-ul {
   color: grey;
   font-size: 50px;
 }
-
 .fa-mobile-screen-button .fa-list-ul .fa-store {
   color: #9356DC;
   font-size: 50px;
@@ -152,7 +161,7 @@ header img {
   border-radius: 30px 30px 0px 0px;
   max-height: 700px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .card__subtitle {
@@ -180,7 +189,6 @@ header img {
   background-color: transparent;
   transition: color 0.5s ease;
 }
-
 .card__txt {
   position: relative;
   display: inline-block;
@@ -205,7 +213,6 @@ footer {
   margin: 0px;
   padding: 0px;
 }
-
 footer .flex__footer {
   display: flex;
   flex-direction: column;
@@ -213,7 +220,6 @@ footer .flex__footer {
   margin-left: 50px;
   line-height: 0.05;
 }
-
 footer .flex__footer .flex-footer__logo {
   display: flex;
   flex-direction: row;
@@ -233,78 +239,66 @@ footer img {
   display: none;
 }
 
+.alignement {
+  color: white;
+}
+
 @media (min-width: 1281px) {
   .header__logo {
     width: 240px;
   }
-
   .header__localisation {
     box-shadow: none;
   }
-
   .header__localisation p {
     font-size: 15px;
   }
-
   .header__localisation .fa-location-dot {
     font-size: 15px;
   }
-
   .header__explore h1 {
     font-size: 50px;
   }
-
   .header__explore .header__exception {
     font-size: 24px;
   }
-
   .header__explore .header__explorer {
     width: 15%;
     font-size: 18px;
   }
-
   #btn__fonctionnement {
     margin-left: 180px;
     margin-right: 180px;
   }
-
   #btn__fonctionnement .btn__nbr {
     font-size: 30px;
     width: 35px;
     height: 35px;
   }
-
   #btn__fonctionnement .flex__queries {
     display: flex;
     flex-direction: row;
   }
-
   #btn__fonctionnement h1 {
     font-size: 40px;
   }
-
   #btn__fonctionnement .btn {
     width: 30%;
     height: 60px;
   }
-
   #btn__fonctionnement .btn__txt {
     font-size: 20px;
   }
-
   #btn__fonctionnement .fa-mobile-screen-button {
     font-size: 35px;
   }
-
   .flexcard__restaurant {
     margin-left: 180px;
     margin-right: 180px;
   }
-
   .flexcard__restaurant h1 {
     font-size: 50px;
   }
-
   .flex__restaurant--queries {
     display: flex;
     flex-direction: row;
@@ -312,68 +306,63 @@ footer img {
     justify-content: space-around;
     gap: 70px;
   }
-
   .card__restaurant img {
     width: 700px;
     height: 300px;
   }
-
   .card__restaurant p {
     font-size: 17px;
   }
-
   .card__restaurant .heart {
     font-size: 25px;
   }
-
   footer .flex__footer {
     display: flex;
     flex-direction: row;
     justify-content: end;
     gap: 10px;
   }
-
   footer p {
     font-size: 15px;
   }
-
   footer .fa-utensils {
     font-size: 12px;
   }
-
   footer .fa-handshake-angle {
     font-size: 12px;
   }
-
   footer .footer__queries {
     display: block;
     width: 120px;
     margin-right: 30px;
   }
-
   footer .alignement {
     margin-top: 41px;
     margin-left: 20px;
   }
-
   .footercache {
     display: none;
   }
-
   /* Responsive Restaurants */
   .main__container {
     margin: auto;
   }
-
+  .title p {
+    margin-left: 320px;
+  }
+  .title i {
+    margin-right: 320px;
+  }
   h3 {
     font-size: 25px;
   }
-
   .menu p {
     font-size: 20px;
   }
+  .palette {
+    height: 100%;
+  }
 }
-
 /* Pages Restaurants */
 .header__restaurant {
   display: flex;
@@ -381,12 +370,10 @@ footer img {
   width: 100%;
   justify-content: center;
 }
-
 .header__restaurant i {
   flex: 0 0 auto;
   margin-left: 30px;
 }
-
 .header__restaurant img {
   flex: 0 0 auto;
   width: 400px;
@@ -397,9 +384,11 @@ footer img {
 
 .palette {
   width: 100%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   z-index: 0;
-
 }
 
 .main__container {
@@ -418,12 +407,10 @@ footer img {
   justify-content: space-between;
   margin: 60px;
 }
-
 .title p {
   font-family: "Shrikhand", cursive;
   font-size: 60px;
 }
-
 .title i {
   font-size: 50px;
 }
@@ -435,7 +422,6 @@ h3 {
   padding-bottom: 5px;
   position: relative;
 }
-
 h3:after {
   content: "";
   position: absolute;
@@ -450,7 +436,6 @@ h3:after {
   margin-right: 40px;
   margin-left: 50px;
 }
-
 .menu__plats {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 50px;
@@ -458,7 +443,6 @@ h3:after {
   padding-right: 30px;
   padding-top: 15px;
 }
-
 .menu__euro {
   display: flex;
   flex-direction: row;
@@ -479,6 +463,4 @@ h3:after {
   line-height: 95px;
   box-shadow: 0px 5px 40px 0px grey;
   text-align: center;
-}
-
-/*# sourceMappingURL=test.css.map */
+}/*# sourceMappingURL=test.css.map */
