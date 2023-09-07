@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -85,7 +86,7 @@ header img {
   transition: all 0s;
 }
 
-.header__explorer:hover {
+.header__explorer:active {
   opacity: 0.5;
   box-shadow: 0px 5px 120px 0px grey;
   transition-delay: 0.2s;
@@ -200,18 +201,7 @@ header img {
   display: inline-block;
 }
 
-.fa-regular.fa-heart {
-  font-size: 24px;
-  /* Ajustez la taille du logo */
-  color: transparent;
-  transition: background-color 1s;
-  /* Durée de la transition */
-}
 
-.card__txt:active .fa-regular.fa-heart {
-  background-color: red;
-  /* Couleur que vous souhaitez pour remplir le logo */
-}
 
 /* Footer */
 footer {
@@ -256,11 +246,13 @@ footer img {
   animation: Appear 2s ease forwards;
 }
 
+
 @keyframes Appear {
   to {
     opacity: 1;
   }
 }
+
 .menu__plats:nth-child(1) {
   animation-delay: 0s;
 }
@@ -281,58 +273,74 @@ footer img {
   .header__logo {
     width: 240px;
   }
+
   .header__localisation {
     box-shadow: none;
   }
+
   .header__localisation p {
     font-size: 15px;
   }
+
   .header__localisation .fa-location-dot {
     font-size: 15px;
   }
+
   .header__explore h1 {
     font-size: 50px;
   }
+
   .header__explore .header__exception {
     font-size: 24px;
   }
+
   .header__explore .header__explorer {
     width: 15%;
     font-size: 18px;
   }
+
   #btn__fonctionnement {
     margin-left: 180px;
     margin-right: 180px;
   }
+
   #btn__fonctionnement .btn__nbr {
     font-size: 30px;
     width: 35px;
     height: 35px;
   }
+
   #btn__fonctionnement .flex__queries {
     display: flex;
     flex-direction: row;
   }
+
   #btn__fonctionnement h1 {
     font-size: 40px;
   }
+
   #btn__fonctionnement .btn {
     width: 30%;
     height: 60px;
   }
+
   #btn__fonctionnement .btn__txt {
     font-size: 20px;
   }
+
   #btn__fonctionnement .fa-mobile-screen-button {
     font-size: 35px;
   }
+
   .flexcard__restaurant {
     margin-left: 180px;
     margin-right: 180px;
   }
+
   .flexcard__restaurant h1 {
     font-size: 50px;
   }
+
   .flex__restaurant--queries {
     display: flex;
     flex-direction: row;
@@ -340,66 +348,84 @@ footer img {
     justify-content: space-around;
     gap: 70px;
   }
+
   .card__restaurant img {
     width: 700px;
     height: 300px;
   }
+
   .card__restaurant p {
     font-size: 17px;
   }
+
   .card__restaurant .heart {
     font-size: 25px;
   }
+
   footer .flex__footer {
     display: flex;
     flex-direction: row;
     justify-content: end;
     gap: 10px;
   }
+
   footer p {
     font-size: 15px;
   }
+
   footer .fa-utensils {
     font-size: 12px;
   }
+
   footer .fa-handshake-angle {
     font-size: 12px;
   }
+
   footer .footer__queries {
     display: block;
     width: 120px;
     margin-right: 30px;
   }
+
   footer .alignement {
     margin-top: 41px;
     margin-left: 20px;
   }
+
   .footercache {
     display: none;
   }
+
   /* Responsive Restaurants */
   .main__container {
     margin: 220px;
   }
+
   .card__subtitle {
     padding-top: 15px;
   }
+
   .title p {
     margin-left: 320px;
   }
+
   .title i {
     margin-right: 320px;
   }
+
   h3 {
     font-size: 25px;
   }
+
   .menu p {
     font-size: 20px;
   }
+
   .palette {
     height: 100%;
   }
 }
+
 /* Pages Restaurants */
 .header__restaurant {
   display: flex;
@@ -485,7 +511,13 @@ h3:after {
   padding-right: 30px;
   padding-top: 15px;
   margin-bottom: 25px;
+  line-height: 0.4;
 }
+
+.menu p {
+  font-size: 39px;
+}
+
 
 .menu__euro {
   display: flex;
@@ -510,7 +542,7 @@ h3:after {
   transition: all 0s;
 }
 
-.commander:hover {
+.commander:active {
   opacity: 0.5;
   box-shadow: 0px 5px 70px 0px grey;
   transition-delay: 0.2s;
@@ -717,17 +749,12 @@ header img {
   display: inline-block;
 }
 
-.fa-regular.fa-heart {
-  font-size: 24px;
-  /* Ajustez la taille du logo */
-  color: transparent;
-  transition: background-color 1s;
-  /* Durée de la transition */
-}
-
-.card__txt:active .fa-regular.fa-heart {
-  background-color: red;
-  /* Couleur que vous souhaitez pour remplir le logo */
+.card__nouveau {
+  background: #99E2D0;
+  position: absolute;
+  margin-left: 720px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /* Footer */
@@ -778,6 +805,7 @@ footer img {
     opacity: 1;
   }
 }
+
 .menu__plats:nth-child(1) {
   animation-delay: 0s;
 }
@@ -798,58 +826,74 @@ footer img {
   .header__logo {
     width: 240px;
   }
+
   .header__localisation {
     box-shadow: none;
   }
+
   .header__localisation p {
     font-size: 15px;
   }
+
   .header__localisation .fa-location-dot {
     font-size: 15px;
   }
+
   .header__explore h1 {
     font-size: 50px;
   }
+
   .header__explore .header__exception {
     font-size: 24px;
   }
+
   .header__explore .header__explorer {
     width: 15%;
     font-size: 18px;
   }
+
   #btn__fonctionnement {
     margin-left: 180px;
     margin-right: 180px;
   }
+
   #btn__fonctionnement .btn__nbr {
     font-size: 30px;
     width: 35px;
     height: 35px;
   }
+
   #btn__fonctionnement .flex__queries {
     display: flex;
     flex-direction: row;
   }
+
   #btn__fonctionnement h1 {
     font-size: 40px;
   }
+
   #btn__fonctionnement .btn {
     width: 30%;
     height: 60px;
   }
+
   #btn__fonctionnement .btn__txt {
     font-size: 20px;
   }
+
   #btn__fonctionnement .fa-mobile-screen-button {
     font-size: 35px;
   }
+
   .flexcard__restaurant {
     margin-left: 180px;
     margin-right: 180px;
   }
+
   .flexcard__restaurant h1 {
     font-size: 50px;
   }
+
   .flex__restaurant--queries {
     display: flex;
     flex-direction: row;
@@ -857,78 +901,85 @@ footer img {
     justify-content: space-around;
     gap: 70px;
   }
+
   .card__restaurant img {
     width: 700px;
     height: 300px;
   }
+
   .card__restaurant p {
     font-size: 17px;
   }
+
   .card__restaurant .heart {
     font-size: 25px;
   }
+
   footer .flex__footer {
     display: flex;
     flex-direction: row;
     justify-content: end;
     gap: 10px;
   }
+
   footer p {
     font-size: 15px;
   }
+
   footer .fa-utensils {
     font-size: 12px;
   }
+
   footer .fa-handshake-angle {
     font-size: 12px;
   }
+
   footer .footer__queries {
     display: block;
     width: 120px;
     margin-right: 30px;
   }
+
   footer .alignement {
     margin-top: 41px;
     margin-left: 20px;
   }
+
   .footercache {
     display: none;
   }
+
   /* Responsive Restaurants */
   .main__container {
     margin: 220px;
   }
+
   .card__subtitle {
     padding-top: 15px;
   }
+
   .title p {
     margin-left: 320px;
   }
+
   .title i {
     margin-right: 320px;
   }
+
   h3 {
     font-size: 25px;
   }
+
   .menu p {
     font-size: 20px;
   }
+
   .palette {
     height: 100%;
   }
 }
-/* Pages Restaurants */
-.header__restaurant {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-}
 
-.header__restaurant i {
-  flex: 0 0 auto;
-  margin-left: 30px;
-}
+/* Pages Restaurants */
 
 .header__restaurant img {
   flex: 0 0 auto;
@@ -1031,42 +1082,48 @@ h3:after {
   0% {
     transform: scaleX(0);
   }
+
   17% {
     transform: scaleX(0.18);
   }
+
   24% {
     transform: scaleX(0.4);
     animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
   }
+
   46% {
     transform: scaleX(0.81);
     animation-timing-function: cubic-bezier(0.25, 0.25, 1);
   }
+
   100% {
     transform: scaleX(1);
   }
 }
+
 .load-container {
   display: flex;
   height: 70%;
   align-items: center;
   justify-content: center;
   position: absolute;
-  margin-left: 700px;
 }
+
 .load-container .progress {
   width: 500px;
   height: 2vw;
-  border: 2px solid #022f40;
+  border: 2px solid #FF79DA;
   padding: 0.25rem;
   margin-bottom: 30px;
+  margin-left: 200px;
   animation: hide-progress 2000ms 150ms linear forwards;
   animation-delay: 2000ms 150ms;
 }
+
 .load-container .progress__bar {
   height: 100%;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  height: 100%;
   transform-origin: left;
   transform: scaleX(0);
   animation: progress-bar 2000ms 150ms;
@@ -1076,10 +1133,12 @@ h3:after {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 .contenu-a-cacher {
   animation: mon-animation 5000ms 150ms forwards;
 }
@@ -1088,7 +1147,70 @@ h3:after {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
-}/*# sourceMappingURL=test.css.map */
+}
+
+/* Animation survol coeurs */
+
+
+/* Animation menu coche */
+
+.fa-check-circle {
+  color: white;
+  margin-top: 58px;
+  margin-left: 40px;
+
+}
+
+.menu__plats:active .menu__plats--coche {
+  background: #15dea5;
+  border-radius: 0 50px 50px 0;
+  padding-right: 40px;
+  margin-right: -30px;
+  margin-top: -40px;
+  transform: scaleX(1);
+
+}
+
+.menu__plats:active .testflex {
+  margin-right: 30px;
+}
+
+.menu__plats--coche {
+  transform-origin: right 0%;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(.32, 0, .07, 1);
+}
+
+
+.testflex {
+  margin-right: -75px;
+  margin-left: auto;
+  transition: margin-left 0.5s cubic-bezier(.32, 0, .07, 1);
+
+
+}
+
+
+
+
+.full-heart {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.full-heart:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+}
+
+
+
+/* test */
+/*# sourceMappingURL=test.css.map */
