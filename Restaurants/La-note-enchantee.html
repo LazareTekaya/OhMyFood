@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title> Oh My Food</title>
-    <link rel="stylesheet" href="../Assets-et-CSS/test.css">
+    <link rel="stylesheet" href="../Assets-et-CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
@@ -31,40 +31,53 @@
 
             <div class="title">
                 <p>La note enchantée</p>
-                <i class="fa-sharp fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart fa-size-restaurants empty-heart"></i>
+                <i class="fa-solid fa-heart fa-size-restaurants full-heart"></i>
             </div>
 
             <article>
                 <h3>ENTRÉES</h3>
                 <div class="menu">
                     <div class="menu__plats">
-                        <p>Ravioles de foie gras</p>
+                        <p class="menu__title">Ravioles de foie gras</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Accompagnée de leur crème à la truffe</p>
-                            <p>25€</p>
+                            <p class="testflex">25€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Caviar osciètre</p>
+                        <p class="menu__title">Caviar osciètre</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Sur blini à la farine de blé noir</p>
-                            <p>35€</p>
+                            <p class="testflex">35€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Homard et espuma de potiron</p>
+                        <p class="menu__title">Homard et espuma de potiron</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Marinés aux zestes d'orange</p>
-                            <p>20€</p>
+                            <p class="testflex">20€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
 
 
                     <div class="menu__plats">
-                        <p>Foie gras de canard cuit entier</p>
+                        <p class="menu__title">Foie gras de canard cuit entier</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Confiture de figue et pain toasté</p>
-                            <p>35€</p>
+                            <p class="testflex">35€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
             </article>
@@ -72,24 +85,33 @@
                 <h3>PLATS</h3>
                 <div class="menu">
                     <div class="menu__plats">
-                        <p>Noix de coquilles Saint-Jacques</p>
+                        <p class="menu__title">Noix de coquilles Saint-Jacques</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Sur lit de purée de céléri-rave</p>
-                            <p>40€</p>
+                            <p class="testflex">40€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Langoustine poêlée</p>
+                        <p class="menu__title">Langoustine poêlée</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Purée de patate douce</p>
-                            <p>35€</p>
+                            <p class="testflex">35€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Mijoté de queue de boeuf</p>
+                        <p class="menu__title">Mijoté de queue de boeuf</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Et riz sauvage aux zestes de citron</p>
-                            <p>45€</p>
+                            <p class="testflex">45€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
             </article>
@@ -97,24 +119,33 @@
                 <h3>Desserts</h3>
                 <div class="menu">
                     <div class="menu__plats">
-                        <p>Macaron noisette et chocolat</p>
+                        <p class="menu__title">Macaron noisette et chocolat</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Glace au caramel brun et sel de Guérande</p>
-                            <p>18€</p>
+                            <p class="testflex">18€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Baba au rhum revisité</p>
+                        <p class="menu__title">Baba au rhum revisité</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Avec son coulis de citron</p>
-                            <p>22€</p>
+                            <p class="testflex">22€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Tarte au citron meringuée</p>
+                        <p class="menu__title">Tarte au citron meringuée</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Déstructurée</p>
-                            <p>23€</p>
+                            <p class="testflex">23€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
             </article>
@@ -137,8 +168,9 @@
                         <p>Devenir partenaire</p>
                     </div>
                     <p class="alignement">Mentions Légales</p>
-                    <p class="alignement">Contact</p>
-
+                    <a href="mailto:contact@ohmyfood.fr">
+                        <p class="alignement">Contact</p>
+                    </a>
                     <img class="footer__queries" src="../Assets-et-css/images/logo/ohmyfood.png" alt="logo ohmyfood">
 
 

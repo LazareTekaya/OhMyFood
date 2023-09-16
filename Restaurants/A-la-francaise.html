@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title> Oh My Food</title>
-    <link rel="stylesheet" href="../Assets-et-CSS/test.css">
+    <link rel="stylesheet" href="../Assets-et-CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
@@ -31,31 +31,41 @@
 
             <div class="title">
                 <p>À la française</p>
-                <i class="fa-sharp fa-solid fa-heart"></i>
+                <i class="fa-regular fa-heart fa-size-restaurants empty-heart"></i>
+                <i class="fa-solid fa-heart fa-size-restaurants full-heart"></i>
             </div>
 
             <article>
                 <h3>ENTRÉES</h3>
                 <div class="menu">
                     <div class="menu__plats">
-                        <p>Tartare de poulpe acidulé</p>
+                        <p class="menu__title">Tartare de poulpe acidulé</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Aux zestes d'orange</p>
-                            <p>25€</p>
+                            <p class="testflex">25€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Velouté de légumes d'antan</p>
+                        <p class="menu__title">Velouté de légumes d'antan</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Carotte, panais, topinambour</p>
-                            <p>35€</p>
+                            <p class="testflex">35€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Soupe à l'oignon</p>
+                        <p class="menu__title">Soupe à l'oignon</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Revisitée</p>
-                            <p>20€</p>
+                            <p class="testflex">20€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
             </article>
@@ -63,24 +73,33 @@
                 <h3>PLATS</h3>
                 <div class="menu">
                     <div class="menu__plats">
-                        <p>Coquille Saint-Jacques</p>
+                        <p class="menu__title">Coquille Saint-Jacques</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Accompagnées d'une purée de panais</p>
-                            <p>40€</p>
+                            <p class="testflex">40€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Magret de canard</p>
+                        <p class="menu__title">Magret de canard</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Et parmentier de pommes de terre</p>
-                            <p>35€</p>
+                            <p class="testflex">35€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Pigeonnau d'Ille-et-Vilaine</p>
+                        <p class="menu__title">Pigeonnau d'Ille-et-Vilaine</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Sur son lit de gnocchis aux légumes</p>
-                            <p>44€</p>
+                            <p class="testflex">44€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
             </article>
@@ -88,24 +107,33 @@
                 <h3>Desserts</h3>
                 <div class="menu">
                     <div class="menu__plats">
-                        <p>Pétales de violettes glacés</p>
+                        <p class="menu__title">Pétales de violettes glacés</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Et purée de noisettes</p>
                             <p>18€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Fondant au chocolat</p>
+                        <p class="menu__title">Fondant au chocolat</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Revisité</p>
-                            <p>22€</p>
+                            <p class="testflex">22€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__plats">
-                        <p>Millefeuille croustillant</p>
+                        <p class="menu__title">Millefeuille croustillant</p>
                         <div class="menu__euro">
                             <p class="card__subtitle">Myrtilles et pâte d'amande</p>
-                            <p>23€</p>
+                            <p class="testflex">23€</p>
+                            <div class="menu__plats--coche">
+                                <i class="far fa-check-circle fa-lg"></i>
+                            </div>
                         </div>
                     </div>
             </article>
@@ -128,7 +156,9 @@
                         <p>Devenir partenaire</p>
                     </div>
                     <p class="alignement">Mentions Légales</p>
-                    <p class="alignement">Contact</p>
+                    <a href="mailto:contact@ohmyfood.fr">
+                        <p class="alignement">Contact</p>
+                    </a>
 
                     <img class="footer__queries" src="../Assets-et-css/images/logo/ohmyfood.png" alt="logo ohmyfood">
 
