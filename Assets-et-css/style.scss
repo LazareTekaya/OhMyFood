@@ -310,7 +310,7 @@ footer {
         text-overflow: ellipsis;
     }
 
-    &:active {
+        {
         .menu__plats--coche {
             background: #8cedd1;
             border-radius: 0 30px 30px 0;
@@ -318,6 +318,13 @@ footer {
             margin-right: -30px;
             margin-top: -75px;
             align-items: center;
+            transform-origin: right 0%;
+            transform: scaleX(0);
+            transition: transform 0.5s cubic-bezier(.32, 0, .07, 1);
+        }
+
+        &:active {
+
             transform: scaleX(1);
         }
 
@@ -326,6 +333,30 @@ footer {
         }
     }
 }
+
+.testflex {
+    margin-right: -75px;
+    margin-left: auto;
+    transition: margin-left 0.5s cubic-bezier(0.32, 0, 0.07, 1);
+}
+
+.menu__plats:active .testflex {
+    margin-right: 30px;
+}
+
+.fa-check-circle {
+    color: $white;
+    margin-top: 95px;
+    margin-left: 60px;
+}
+
+
+.menu__plats--coche {
+    transform-origin: right 0%;
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(.32, 0, .07, 1);
+}
+
 
 @keyframes Appear {
     to {
@@ -509,23 +540,6 @@ h3 {
     }
 }
 
-.fa-check-circle {
-    color: $white;
-    margin-top: 95px;
-    margin-left: 60px;
-}
-
-.menu__plats--coche {
-    transform-origin: right 0%;
-    transform: scaleX(0);
-    transition: transform 0.5s cubic-bezier(.32, 0, .07, 1);
-}
-
-.testflex {
-    margin-right: -75px;
-    margin-left: auto;
-    transition: margin-left 0.5s cubic-bezier(.32, 0, .07, 1);
-}
 
 .empty-heart {
     position: absolute;
@@ -639,6 +653,7 @@ h3 {
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 70px;
+
     }
 
     .card__nouveau {
@@ -720,23 +735,34 @@ h3 {
             .menu__plats--coche {
                 background: #8cedd1;
                 border-radius: 0 30px 30px 0;
-                padding-right: 50px;
-                margin-right: -30px;
-                align-items: center;
-                transform: scaleX(1);
+                padding-right: 70px;
+                margin-right: -35px;
+                margin-top: auto;
+                margin-bottom: auto;
+                height: 104px;
+                width: 40px;
+                transform: scaleX(0);
+                transition: transform 0.4s cubic-bezier(0.32, 0, 0.07, 1);
+                transform-origin: right;
             }
 
             .testflex {
                 margin-right: 50px;
             }
 
-            .fa-check-circle {
-                color: $white;
-                margin-top: 92px;
-                margin-right: 13px;
+            .menu__plats:hover .fa-circle-check {
+                color: white;
+                position: absolute;
+                bottom: 30px;
+                right: 37px;
+                opacity: 1;
+                font-size: 40px;
+
             }
         }
     }
+
+
 
     .title {
         p {
